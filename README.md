@@ -1,9 +1,42 @@
 # Phaser 3 TypeScript starter template
-Clone repo and go build games!!!
+Clone or fork this repository and you space ready for build amazing browser games based on TypeScript and Phaser 3!
+
+## Getting started
+
+### Prerequisites
+
+```
+Download and install npm with Node.js @ https://nodejs.org/en
+```
+
+### Installing
+
+Select a folder, navigate to it, and clone this repository
+with this command-line:
+
+```
+git clone https://github.com/CatOstrovsky/phaser3-ts-template
+```
+
+Install the dependencies with this command-line:
+
+```
+npm install
+```
+> If you use yarn just replace `npm` with `yarn`
+
+### Building and Running
+
+Perform a quick build (bundle.js) and start server:
+
+```
+npm run dev
+```
+> If you use yarn just replace `npm` with `yarn`
 
 ![Preview](https://web-panda.ru/images/1543096651.png)
 
-### Links to Phaser 3 and Games Development
+## Links to Phaser 3 and Games Development
 1. [DOCS](https://photonstorm.github.io/phaser3-docs/)
 1. [EXAMPLES](https://labs.phaser.io/)
 1. [FREE ASSETS #1](http://spritedatabase.net/)
@@ -14,7 +47,7 @@ Clone repo and go build games!!!
 1. [MAKE GAME ATLAS](https://www.codeandweb.com/texturepacker)
 1. [PHASER 3 TYPESCRIPT EXAMPLES](https://github.com/digitsensitive/phaser3-typescript)
 
-### Requirements
+## Requirements
 
 We need [Node.js](https://nodejs.org) to install and run scripts.
 
