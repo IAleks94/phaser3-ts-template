@@ -36,7 +36,7 @@ npm run dev
 
 ![Preview](https://web-panda.ru/images/1543096651.png)
 
-### Links to Phaser 3 and Games Development
+## Links to Phaser 3 and Games Development
 1. [DOCS](https://photonstorm.github.io/phaser3-docs/)
 1. [EXAMPLES](https://labs.phaser.io/)
 1. [FREE ASSETS #1](http://spritedatabase.net/)
@@ -47,7 +47,7 @@ npm run dev
 1. [MAKE GAME ATLAS](https://www.codeandweb.com/texturepacker)
 1. [PHASER 3 TYPESCRIPT EXAMPLES](https://github.com/digitsensitive/phaser3-typescript)
 
-### Requirements
+## Requirements
 
 We need [Node.js](https://nodejs.org) to install and run scripts.
 
