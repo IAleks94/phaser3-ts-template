@@ -37,7 +37,7 @@ export class Boot extends Phaser.Scene {
 
   create() : void {
  
-  	this.scene.start('wellcome');
+  	this.scene.start('welcome');
 
   }
 
