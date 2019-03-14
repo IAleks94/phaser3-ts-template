@@ -14,8 +14,6 @@ export class Boot extends Phaser.Scene {
   }
 
   preload() : void {
-
-  	this.load.spritesheet('panda', 'assets/images/panda.png', { frameWidth: 178, frameHeight: 149 });
     this.drawLoader()
   }
   
