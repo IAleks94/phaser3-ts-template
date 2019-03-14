@@ -1,5 +1,5 @@
 {
-  "name": "Phaser 3 TS",
+  "name": "phaser3-ts-template",
   "version": "1.0.0",
   "description": "Phaser 3 open source game",
   "main": "index.js",
