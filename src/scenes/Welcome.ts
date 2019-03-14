@@ -9,7 +9,7 @@ export class Welcome extends Phaser.Scene {
 
   constructor() {
     super({
-      key: "wellcome",
+      key: "welcome",
     });
   }
   
