@@ -5,12 +5,16 @@
  */
 import Config from "../const/config"
 
-export class Wellcome extends Phaser.Scene {
+export class Welcome extends Phaser.Scene {
 
   constructor() {
     super({
       key: "wellcome",
     });
+  }
+  
+  preload() {
+    this.load.spritesheet('panda', 'assets/images/panda.png', { frameWidth: 178, frameHeight: 149 });
   }
 
   create() : void {
