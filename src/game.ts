@@ -10,12 +10,12 @@
 
 import "phaser";
 import { Boot } from './scenes/Boot'
-import { Wellcome } from './scenes/Wellcome'
+import { Welcome } from './scenes/Welcome'
 import Config from './const/config'
 
 const config: GameConfig = {
   ...Config,
-  scene: [Boot, Wellcome]
+  scene: [Boot, Welcome]
 };
 
 export class Game extends Phaser.Game {
