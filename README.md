@@ -30,7 +30,7 @@ npm install
 Perform a quick build (bundle.js) and start server:
 
 ```
-npm run dev
+npm run start
 ```
 > If you use yarn just replace `npm` with `yarn`
 
