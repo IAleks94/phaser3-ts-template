@@ -16,11 +16,14 @@ export class Boot extends Phaser.Scene {
   preload() : void {
 
   	this.load.spritesheet('panda', 'assets/images/panda.png', { frameWidth: 178, frameHeight: 149 });
-   
-    var progress = this.add.graphics();
-    let bootText = this.add.text(Config.width/2,Config.height/2, "Load assets...", {color: "#ffffff", fontSize: "30px" }).setOrigin(.5,.5);
+    this.drawLoader()
+  }
+  
+  drawLoader() : void {
+    let progress = this.add.graphics(),
+    bootText = this.add.text(Config.width/2,Config.height/2, "Load assets...", {color: "#ffffff", fontSize: "30px" }).setOrigin(.5,.5);
 
-    var onProgress = (value:number) : void => {
+    let onProgress = (value:number) : void => {
         progress.clear();
         let progressProcent = parseInt(`${value*100}`);
         bootText.setText(`${progressProcent}%`)
@@ -32,7 +35,6 @@ export class Boot extends Phaser.Scene {
     this.load.on('progress', (value) : void => {
         onProgress(value);
     });
-
   }
 
   create() : void {
