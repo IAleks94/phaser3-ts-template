@@ -25,11 +25,7 @@ export class Wellcome extends Phaser.Scene {
 
     let panda = this.add.sprite(Config.width/2, Config.height/2, 'panda');
 
-    if(anim.frames.length){
-      panda.anims.play("jump");
-    }else{
-      console.error("not found frames", anim)
-    }
+    panda.anims.play("jump");
    
     this.add.text(Config.width/2, 30, "All ready!", { fontColor: 0xffffff, fontSize: 20, textAlign: 'center' }).setOrigin(.5, 0).setScale(.5);
 
