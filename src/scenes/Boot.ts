@@ -4,40 +4,48 @@
  * @description  Boot game scene. Gift is preloader :)
  * @license      CatOstrovsky
  */
-import Config from "../const/config"
+
+const audios = [
+  { name: "bump", link: "assets/audio/bump.mp3" },
+  { name: "bump-1", link: "assets/audio/bump-1.mp3" },
+  { name: "cash", link: "assets/audio/cash.mp3" },
+  { name: "select", link: "assets/audio/select.mp3" },
+  { name: "auch", link: "assets/audio/auch.mp3" },
+  { name: "lose", link: "assets/audio/lose.mp3" },
+  { name: "win", link: "assets/audio/win.mp3" }
+]
+
+const images = [
+  { name: 'coin', link: 'assets/images/coin.png' },
+  { name: 'sofa', link: 'assets/images/sofa.png' },
+  { name: 'sofa_1', link: 'assets/images/sofa_1.png' },
+  { name: 'sofa_2', link: 'assets/images/sofa_2.png' },
+  { name: 'sofa_3', link: 'assets/images/sofa_3.png' },
+  { name: 'sofa_4', link: 'assets/images/sofa_4.png' },
+  { name: 'arrow', link: 'assets/images/arrow.png' },
+  { name: 'sofa_4', link: 'assets/images/sofa_4.png' },
+  { name: 'phaserguy', link: 'assets/images/phaserguy.png' },
+  { name: 'tileset', link: 'assets/map/gridtiles.png' }
+
+]
 
 export class Boot extends Phaser.Scene {
   constructor() {
-    super({
-      key: "boot"
-    });
+    super("boot");
   }
 
-  preload() : void {
-    this.drawLoader()
-  }
-  
-  drawLoader() : void {
-    let progress = this.add.graphics(),
-    bootText = this.add.text(Config.width/2,Config.height/2, "Load assets...", {color: "#ffffff", fontSize: "30px" }).setOrigin(.5,.5);
+  preload(): void {
+    audios.forEach(audio => this.load.audio(audio.name, audio.link));
+    images.forEach(image => this.load.image(image.name, image.link));
 
-    let onProgress = (value:number) : void => {
-        progress.clear();
-        let progressProcent = parseInt(`${value*100}`);
-        bootText.setText(`${progressProcent}%`)
-        progress.fillStyle(0x484848, 1);
-        progress.fillRect(0, 0, Config.width , Config.height * value);
-        console.log(value)
-    }
+    
 
-    this.load.on('progress', (value) : void => {
-        onProgress(value);
-    });
+    this.load.bitmapFont('joystix', 'assets/fonts/joystix.png', 'assets/fonts/joystix.fnt')
   }
 
-  create() : void {
- 
-  	this.scene.start('welcome');
+  create(): void {
+
+    this.scene.start('FirstMenu');
 
   }
 

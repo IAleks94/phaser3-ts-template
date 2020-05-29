@@ -1,8 +1,8 @@
 const path = require('path'),
 pathToPhaser = path.join(__dirname, '/node_modules/phaser/'),
 phaser = path.join(pathToPhaser, 'dist/phaser.js'),
-MinifyPlugin = require("babel-minify-webpack-plugin"),
-{BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
+MinifyPlugin = require("babel-minify-webpack-plugin");
+// {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: './src/game.ts',
@@ -26,7 +26,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, './'),
     publicPath: '/build/',
     host: '127.0.0.1',
-    port: 3000,
+    port: 3001,
     open: true
   },
   resolve: {
